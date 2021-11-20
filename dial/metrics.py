@@ -1,7 +1,7 @@
 from nltk.translate.bleu_score import corpus_bleu, sentence_bleu, SmoothingFunction
 from nltk import word_tokenize
 
-import language_evaluation
+# import language_evaluation
 from typing import List
 from collections import defaultdict, Counter
 import re
@@ -198,7 +198,7 @@ def dialogue_evaluation(ori_cands, ori_golds):
     cdiv1, cdiv2 = calc_corpus_distinct(cands)
     sdiv1, sdiv2 = calc_sentence_distinct(cands)
     cf1 = calc_corpus_f1(cands, golds)
-    rouge_result = calc_rouge(cands, golds)
+    # rouge_result = calc_rouge(cands, golds)
     result = {
         'cf1': cf1,
         'bleu1': cbleu1,
@@ -208,7 +208,7 @@ def dialogue_evaluation(ori_cands, ori_golds):
         'dist1': cdiv1,
         'dist2': cdiv2,
     }
-    result.update(rouge_result)
+    # result.update(rouge_result)
     result = {k: round(100 * v, 6) for k, v in result.items()}
     return result
 

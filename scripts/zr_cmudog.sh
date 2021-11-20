@@ -1,4 +1,5 @@
-MODEL='checkpoints/redditcc_warmup_4'
+MODEL='checkpoints/redditcc_stage2_4'
+
 DATADIR='dataset/cmudog_kat'
 OUTPUT=$MODEL
 export TOKENIZERS_PARALLELISM=true

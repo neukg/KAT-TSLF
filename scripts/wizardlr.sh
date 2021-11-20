@@ -1,8 +1,8 @@
-MODEL='checkpoints/redditcc_warmup_40'
+MODEL='checkpoints/redditcc_stage2_40'
 DATADIR='dataset/wizard_kat'
 OUT_PREFIX='wizardlr_kat'
 export TOKENIZERS_PARALLELISM=true
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
 
 for rat in 2 4 8 16
 do

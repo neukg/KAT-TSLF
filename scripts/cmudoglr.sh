@@ -1,7 +1,7 @@
-MODEL='checkpoints/redditcc_warmup_20'
+MODEL='checkpoints/redditcc_stage2_4'
 DATADIR='dataset/cmudog_kat'
 export TOKENIZERS_PARALLELISM=true
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
 
 for rat in 2 4 8 16
 do
@@ -25,5 +25,5 @@ do
         --per_gpu_eval_batch_size 32 \
         --gradient_accumulation_steps 1 \
         --output_dir $OUTPUT \
-        --overwrite_output_dir --fp16 --num_beams 2
+        --overwrite_output_dir --fp16 --num_beams 1
 done

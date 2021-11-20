@@ -1,15 +1,15 @@
-MODEL='pretrained/redditcc_base'
-KNOMODEL='pretrained/bart_wikilm'
-DATADIR='dataset/redditcc_full_warmup'
-
-OUTPUT='checkpoints/redditcc_warmup_40'
+MODEL='./redditcc_base'
+KNOMODEL='./bart_wikilm'
+DATADIR='dataset'
 export TOKENIZERS_PARALLELISM=true
+
+OUTPUT='checkpoints/redditcc_stage2_40'
 CUDA_VISIBLE_DEVICES=0 python run_kat.py \
     --model_name_or_path $MODEL \
     --kno_mlm_model_path $KNOMODEL \
     --data_dir $DATADIR \
     --cache_dir 'cached' \
-    --train_prefix 'train_40' \
+    --train_prefix 'train_p1_n39.jsonl' \
     --task 'kat' \
     --init_kno_encoder \
     --max_source_length 256 \
@@ -25,14 +25,13 @@ CUDA_VISIBLE_DEVICES=0 python run_kat.py \
     --output_dir $OUTPUT \
     --overwrite_output_dir --fp16
 
-OUTPUT='checkpoints/redditcc_warmup_20'
-export TOKENIZERS_PARALLELISM=true
+OUTPUT='checkpoints/redditcc_stage2_20'
 CUDA_VISIBLE_DEVICES=0 python run_kat.py \
     --model_name_or_path $MODEL \
     --kno_mlm_model_path $KNOMODEL \
     --data_dir $DATADIR \
     --cache_dir 'cached' \
-    --train_prefix 'train_20' \
+    --train_prefix 'train_p1_n39.jsonl' \
     --task 'kat' \
     --init_kno_encoder \
     --max_source_length 256 \
@@ -48,14 +47,14 @@ CUDA_VISIBLE_DEVICES=0 python run_kat.py \
     --output_dir $OUTPUT \
     --overwrite_output_dir --fp16
 
-OUTPUT='checkpoints/redditcc_warmup_4'
+OUTPUT='checkpoints/redditcc_stage2_4'
 export TOKENIZERS_PARALLELISM=true
 CUDA_VISIBLE_DEVICES=0 python run_kat.py \
     --model_name_or_path $MODEL \
     --kno_mlm_model_path $KNOMODEL \
     --data_dir $DATADIR \
     --cache_dir 'cached' \
-    --train_prefix 'train_4' \
+    --train_prefix 'train_p1_n39.jsonl' \
     --task 'kat' \
     --init_kno_encoder \
     --max_source_length 256 \

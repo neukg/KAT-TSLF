@@ -1,4 +1,4 @@
-MODEL='checkpoints/redditcc_warmup_40'
+MODEL='checkpoints/redditcc_stage2_20'
 DATADIR='dataset/wizard_kat'
 OUTPUT=$MODEL
 export TOKENIZERS_PARALLELISM=true
@@ -20,7 +20,7 @@ python run_kat.py \
     --per_gpu_eval_batch_size 16 \
     --gradient_accumulation_steps 2 \
     --output_dir $OUTPUT \
-    --overwrite_output_dir --fp16 --num_beams 5
+    --overwrite_output_dir --fp16 --num_beams 1
 
 python run_kat.py \
     --model_name_or_path $MODEL \
@@ -39,4 +39,4 @@ python run_kat.py \
     --per_gpu_eval_batch_size 16 \
     --gradient_accumulation_steps 2 \
     --output_dir $OUTPUT \
-    --overwrite_output_dir --fp16 --num_beams 5
+    --overwrite_output_dir --fp16 --num_beams 1
