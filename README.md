@@ -1,12 +1,12 @@
 # KAT-TSLF
-Source code of paper "A Novel Three-Stage Learning Framework for Low-Resource Knowledge-Grounded Dialogue Generation"
+Source code of paper "A Novel Three-Stage Learning Framework for Low-Resource Knowledge-Grounded Dialogue Generation".
 
 ## Environments
 * python 3.7
 * transformers 4.2.2
 * NLTK
 * pytorch
-* language_evaluation (install from SKT project)
+* language_evaluation (install from [SKT](https://github.com/bckim92/sequential-knowledge-transformer) project)
 
 ## Datasets and Models 
 1. Download Wizard-of-Wikipedia, CMU_DoG and pseudo dataset (used in stage II) from [here](https://cloud.189.cn/t/qAna2iUf6vmy
@@ -56,6 +56,5 @@ bash scripts/zr_cmudog.sh
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2021.emnlp-main.173",
     pages = "2262--2272",
-    abstract = "Neural conversation models have shown great potentials towards generating fluent and informative responses by introducing external background knowledge. Nevertheless, it is laborious to construct such knowledge-grounded dialogues, and existing models usually perform poorly when transfer to new domains with limited training samples. Therefore, building a knowledge-grounded dialogue system under the low-resource setting is a still crucial issue. In this paper, we propose a novel three-stage learning framework based on weakly supervised learning which benefits from large scale ungrounded dialogues and unstructured knowledge base. To better cooperate with this framework, we devise a variant of Transformer with decoupled decoder which facilitates the disentangled learning of response generation and knowledge incorporation. Evaluation results on two benchmarks indicate that our approach can outperform other state-of-the-art methods with less training data, and even in zero-resource scenario, our approach still performs well.",
 }
 ```
