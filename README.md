@@ -9,9 +9,9 @@ Source code of paper "A Novel Three-Stage Learning Framework for Low-Resource Kn
 * language_evaluation (install from [SKT](https://github.com/bckim92/sequential-knowledge-transformer) project)
 
 ## Datasets and Models 
-1. Download Wizard-of-Wikipedia, CMU_DoG and pseudo dataset (used in stage II) from [here](https://stuneueducn-my.sharepoint.com/:u:/g/personal/20151119_stu_neu_edu_cn/EXj-F55Y1AlNqh_SnQm9vt0BWHnoN3oldH-gQRFKPN_MYg?e=L8Urej).
-2. Download BART pre-trained on Reddit Conversation Corpus and Wikipedia dumps from [here](https://drive.google.com/file/d/1f2VFmTkmOh4w05Dll2a9x-o8YjTimAnK/view?usp=sharing) and [here](https://drive.google.com/file/d/1GjMP8cRAJfWXCYoUpR5xp2CUhSkLMgZY/view?usp=sharing).
-3. (Optional) Download pre-trained checkpoint from [here](https://stuneueducn-my.sharepoint.com/:u:/g/personal/20151119_stu_neu_edu_cn/EUyf3Jpqeu5Fj2Eamv16CK8Bp6Z3jDnCjGouQauh5CiI1g?e=Ccbdbl). 
+1. Download Wizard-of-Wikipedia, CMU_DoG and pseudo dataset (used in stage II) from [[OneDrive]](https://stuneueducn-my.sharepoint.com/:u:/g/personal/20151119_stu_neu_edu_cn/EUyf3Jpqeu5Fj2Eamv16CK8Bp6Z3jDnCjGouQauh5CiI1g?e=Ccbdbl) [[189 Clond]](https://cloud.189.cn/t/qAna2iUf6vmy) [[Google Drive]](https://drive.google.com/file/d/1XVDs-sTlTZfd1vQAAtSFsxMx6V7TZ1HE/view?usp=sharing).
+2. Download BART pre-trained on Reddit Conversation Corpus and Wikipedia dumps from [[Google Drive]](https://drive.google.com/file/d/1f2VFmTkmOh4w05Dll2a9x-o8YjTimAnK/view?usp=sharing) and [[Google Drive]](https://drive.google.com/file/d/1GjMP8cRAJfWXCYoUpR5xp2CUhSkLMgZY/view?usp=sharing).
+3. (Optional) Download pre-trained checkpoint from [[OneDrive]](https://stuneueducn-my.sharepoint.com/:u:/g/personal/20151119_stu_neu_edu_cn/EXj-F55Y1AlNqh_SnQm9vt0BWHnoN3oldH-gQRFKPN_MYg?e=L8Urej) [[189 Clond]](https://cloud.189.cn/t/UbmUjeVBfaAz) [[Google Drive]](https://drive.google.com/file/d/1ZuMV9fnBrg-rgFh7btaIC0cyjgtkQAjL/view?usp=sharing). 
 
 ## (Optional) Run Stage II 
 ```bash
