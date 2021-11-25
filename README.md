@@ -19,6 +19,14 @@ bash scripts/warmup.sh
 ```
 
 ## Run Stage III 
+Wizard-of-Wikipedia:
+```bash
+bash scripts/wizard.sh
+```
+CMU_DoG:
+```bash
+bash scripts/cmudog.sh
+```
 Low-resource on Wizard-of-Wikipedia: 
 ```bash
 bash scripts/wizardlr.sh

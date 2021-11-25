@@ -48,7 +48,6 @@ CUDA_VISIBLE_DEVICES=0 python run_kat.py \
     --overwrite_output_dir --fp16
 
 OUTPUT='checkpoints/redditcc_stage2_4'
-export TOKENIZERS_PARALLELISM=true
 CUDA_VISIBLE_DEVICES=0 python run_kat.py \
     --model_name_or_path $MODEL \
     --kno_mlm_model_path $KNOMODEL \
